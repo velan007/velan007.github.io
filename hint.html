@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Debpriya 3.1</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Happy Birthday DEBZ<br /></h1>
+						<h2>Welcome to the HINTs</h2>
+						<audio id="backgroundMusic" loop>
+							<source src="audios\song_6.mp3" type="audio/mp3">
+							Your browser does not support the audio tag.
+						</audio>
+						<button onclick="playAudio()"><b>click here</b></button>
+						<ul class="actions">
+							<li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Main -->
+					<div id="main">
+
+						<form id="login-form">
+							<h2>Who loves the Panda's most ? you or Gamemaster</h2>
+							<b>(answer in lowercase)</b><br>
+							<!-- Add this script tag to the head of your HTML file -->
+						
+						  
+							<div class="content">
+							  <div class="input-field">
+								<label for="answer">ANSWER the name</label>
+								<input type="text" id="answer" name="username" required>
+							  </div>
+							</div>
+							<div class="action">
+							  <button type="submit">enter</button>
+							</div>
+						  </form>
+						  <div id="certificateOutput"></div>
+							<hr />
+
+					</div>
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				document.getElementById('login-form').addEventListener('submit', function(event) {
+				event.preventDefault(); // Prevent the default form submission
+
+				var answer = document.getElementById('answer').value; // Retrieve the Warden ID
+
+				if (answer == "kaustav") {
+					const certificateContent = `
+						<h2>HOLA DEBZ</h2>
+						<p><strong>You are more than capable enough to solve the challenge, by yourself</strong></p>
+						<p><strong>This hint was just to make you realize on your birthday about the massive potential within you!</strong></p>
+						<p><strong>Keep Going Forward, I will be there to support you anytime and every time</strong></p>
+						<p><strong>Sorry Not Hints for you..!!</strong></p>
+					`;
+					// Display the certificate
+					document.getElementById('certificateOutput').innerHTML = certificateContent;
+				} else {
+					alert('Wrong Answer Debz');
+				}
+			});
+			</script>
+			<script>
+				function playAudio() {
+					var audio = document.getElementById('backgroundMusic');
+					audio.play();
+				}
+			</script>
+
+			<script>
+				// Create the certificate content
+				const certificateContent = `
+				<h2>HOLA DEBZ</h2>
+				<p><strong>You are more than capable enough to solve the challenge, by yourself</strong></p>
+				<p><strong>This hint was just to make you realise in your birthday about the massive potential within you!</strong></p>
+				<p><strong>Keep Going Forward, I will be there to your support you anytime and everytime</strong></p>
+				<p><strong>Sorry Not Hints for you..!!</strong></p>
+				`;
+
+				// Display the certificate
+				document.getElementById('certificateOutput').innerHTML = certificateContent;
+				</script>
+	</body>
+</html>
